@@ -1,0 +1,123 @@
+/*
+* @Author: vip
+* @Date:   2017-06-01 13:22:55
+* @Last Modified by:   vip
+* @Last Modified time: 2017-06-21 10:07:10
+*/
+.order-detail{
+	background-color: #f2f2f2;
+}
+.order-detail .order-status{
+	background-color: #e54f2b;
+	padding: 20px 10px;
+	overflow: hidden;
+	font-size: 18px;
+	color: #fff;
+}
+.order-detail .order-status img{
+	float: left;
+	width: 18px;
+	margin: 1px 12px 0 0;
+}
+.order-detail .trans-info{
+	background-color: #fff;
+}
+.order-detail .trans-info .text-r{
+	text-align: right;
+}
+.order-detail .list.pro-info .item{
+	background-color: #fff;
+	border: 0;
+	border-top: solid 1px #e1e1e1;
+}
+.order-detail .list.pro-info .item img{
+	border: solid 1px #e1e1e1;
+}
+.order-detail .list.pro-info{
+	margin-bottom: 10px;
+}
+.order-detail .pro-info .unit-price{
+	font-size: 12px;
+}
+.order-detail .pro-info .total-price{
+	font-weight: bold;
+}
+.order-detail .pro-info h2{
+	font-size: 15px;
+	height: 40px;
+	line-height: 20px;
+	white-space: normal;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-line-clamp: 2;
+	-webkit-box-orient: vertical;
+}
+
+.order-detail .order-info,
+.order-detail .settlement{
+	padding: 15px 10px;
+	background-color: #fff;
+	color: #666666;
+}
+.order-detail .order-info .order p:last-child{
+	margin-bottom: 10px;
+}
+.order-detail .order-info p{
+	margin-bottom: 5px;
+}
+.order-detail .order-info .invoice{
+	padding: 10px 0 0 0;
+	height: 78px;
+	border-top: solid 1px #e1e1e1;
+	overflow: hidden;
+}
+.order-detail .order-info .invoice.invoice-detail{
+	height: auto;
+}
+.order-detail .order-info .invoice .row,
+.order-detail .order-info .invoice .row .col{
+	padding: 0;
+}
+
+.order-detail .order-info .invoice .check-invoice{
+	color: #507daf;
+	text-align: right;
+	font-size: 12px;
+}
+.order-detail .order-info .invoice .check-invoice i{
+	margin-top: 3px;
+	width: 15px;
+	height: 15px;
+	float: right;
+	display: inline-block;
+	background-image:url(../../../../img/icon04.png);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: contain;
+}
+.order-detail .order-info .invoice.invoice-detail .check-invoice i{
+	background-image:url(../../../../img/icon05.png);
+}
+.order-detail .order-info .invoice>div{
+	margin-bottom: 5px;
+}
+.order-detail .settlement{
+	margin: 10px 0 0 0;
+}
+.order-detail .settlement .row,
+.order-detail .settlement .row .col{
+	padding: 0 0 5px 0;
+}
+.order-detail .settlement .row .col:last-child{
+	text-align: right;
+}
+.order-detail .settlement .actual{
+	padding-top: 10px;
+	text-align: right;
+	border-top: solid 1px #e1e1e1;
+}
+.order-detail .settlement .actual span{
+	color: #e44f2b;
+	font-weight: bold;
+}

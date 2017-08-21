@@ -1,0 +1,113 @@
+/*
+* @Author: vip
+* @Date:   2017-06-01 13:22:55
+* @Last Modified by:   vip
+* @Last Modified time: 2017-07-27 14:03:23
+*/
+.my-address{
+	/* background-color: #dddddd; */
+	background-color: #f2f2f2;
+}
+.my-address .content{
+	margin-top: 15px;
+}
+.my-address .content .no-address{
+	margin-top: 60px;
+}
+.my-address .content .no-address img{
+	width:100%;
+}
+.my-address .content .delete-address{
+	background-color: #e95379;
+	color: #fff;
+}
+.my-address .content ion-item .is-default{
+	/* position: absolute;
+	right: 10px;
+	top: 15px; */
+}
+.my-address .content ion-item .row,
+.my-address .content ion-item .row .col{
+	padding: 0;
+}
+.my-address .content .oper-tip{
+	margin: 10px;
+	text-align: right;
+	color: #999999;
+}
+.my-address .add-address{
+	margin: 40px 10px 10px;
+	padding: 12px 0;
+	display: block;
+	background-color: #db4b29;
+	color: #fff;
+	text-align: center;
+	text-decoration: none;
+	border-radius: 5px;
+}
+.my-address .radio-content{
+	padding-left: 20px;
+  	font-size: 12px;
+}
+.my-address .item-radio{
+	position: absolute;
+	right: 17px;
+	top: 19px;
+	border: 0;
+}
+.my-address .item-radio .item-content{
+	padding: 0;
+}
+.my-address .item-radio .radio-icon{
+	position: absolute;
+	visibility: visible;
+  	padding: 0;
+	top: 0;
+	left: 0;
+	z-index: 3;
+	width: 16px;
+	height: 16px;
+	border: solid 1px #ccc;
+	border-radius: 50%;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+.my-address .is-default.item-radio .radio-icon{
+	border: 0;
+	background-image: url(../../../../img/icon/selected.png);
+}
+.my-address .item-radio.activated,
+.my-address .item-radio input:checked+.radio-content .item-content{
+	background: none;
+}
+.p-type11{
+	text-align: center;
+	font-size: 20px;
+}
+.my-address .address-list{
+	background-color: #fff;
+	margin: 10px 0;
+}
+.my-address .address-list .row .col{
+
+}
+.my-address .address-list .row .col img{
+	margin: 3px 4px 0 0;
+	float: left;
+	width: 15px;
+}
+.my-address .address-list .row .col.size16{
+	font-size: 16px;
+}
+.my-address .address-list .row .col.size13,
+.my-address .address-list .row .col.size13 label{
+	font-size: 13px;
+	color: #666666;
+}
+.my-address .address-list .row .pb0{
+	padding-bottom: 0;
+}
+.my-address .address-list .row.detail-address{
+	border-bottom: solid 1px #ccc;
+}

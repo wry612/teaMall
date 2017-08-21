@@ -1,0 +1,48 @@
+﻿<style type="text/css">
+	.my-msg .msg-content div table td{
+		vertical-align: middle;
+		padding: 23px 5px;
+		width: 50%;
+	}
+	.my-msg .msg-content div table td > div{
+		/*width: 50%;*/
+	}
+	.my-msg .msg-content div table td div img,
+	.my-msg .msg-content p img{
+		margin: 5px 0;
+		width: 100%;
+	}
+</style>
+
+<ion-view class="my-msg bg-fff" hide-app-title>
+
+	<ion-header-bar class="bar bar-header">
+		<a ng-if="params.type=='sysNotice'" class="back-btn ion-ios-arrow-left" onclick="appRuler.closePage()"></a>
+        <a ng-if="params.type!='sysNotice'" class="back-btn ion-ios-arrow-left" back></a>
+        <h1 class="title">
+        	<i ng-if="params.type=='notice' || params.type=='sysNotice'">系统公告详情</i>
+        	<i ng-if="params.type=='logistics'">物流消息详情</i>
+        	<i ng-if="params.type=='trade'">交易消息详情</i>
+        </h1>
+    </ion-header-bar>
+
+	<ion-content>
+	
+		<div class="content">
+			<div class="detail-list">
+			    <div class="chunk">
+			    	<p class="msg-type" ng-bind="m.title"></p>
+			    	<p class="msg-content" ng-bind-html="m.content"></p>
+			    	<p ng-if="m" class="msg-date" ng-bind="(m.startDate || m.createTime || m.publishTime) | dateTime"></p>
+			    </div>
+			</div>
+		</div>
+
+
+	</ion-content>
+
+</ion-view>
+
+
+
+
