@@ -1,5 +1,0 @@
-<style type="text/css">.item-note{
-		width: 69%;
-		white-space: normal;
-		text-align: right;
-	}</style><ion-view class="user-info" hide-app-title><ion-header-bar class="bar bar-header"><a class="back-btn ion-ios-arrow-left" onclick="appRuler.closePage()"></a><h1 class="title"><i ng-if="role=='CUSTOMER'">我的经销商</i> <i ng-if="role=='AGENT'">我的上级</i></h1></ion-header-bar><ion-content><div ng-if="m"><div ng-if="showDistri" class="list"><a class="item bg-none">经销商名称 <span class="item-note">{{m.name}} </span></a><a class="item bg-none">经销商地址 <span class="item-note">{{m.province + '' + m.city + '' + m.area + '' + m.address}} </span></a><a class="item bg-none">经销商电话 <span class="item-note">{{m.phone}}</span></a></div><div ng-if="!showDistri" class="list"><a class="item bg-none">茶企名称 <span class="item-note">{{m.name}} </span></a><a class="item bg-none">茶企地址 <span class="item-note">{{m.address}} </span></a><a class="item bg-none">茶企电话 <span class="item-note">{{m.phone}}</span></a></div></div></ion-content></ion-view>
