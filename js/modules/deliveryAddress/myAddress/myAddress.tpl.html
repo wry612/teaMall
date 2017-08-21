@@ -1,0 +1,70 @@
+﻿<style type="text/css">
+	.confirm-bind-modal{ padding: 20px; }
+	.confirm-bind-modal .row{   margin: 15px 0 5px;border: 0; }
+</style>
+
+<ion-view class="my-address" hide-app-title>
+
+	<ion-header-bar class="bar bar-header">
+        <a class="back-btn ion-ios-arrow-left" onclick="appRuler.closePage()"></a>
+        <h1 class="title">管理收货地址</h1>
+    </ion-header-bar>
+
+	<ion-content>
+	
+		<div class="content">
+			<div ng-if="addressList.length <= 0" class="no-address">
+				<img src="img/no-address.png">
+			</div>
+
+			<div class="address-list" ng-if="addressList.length > 0" ng-repeat="a in addressList">
+			  	<div class="row">
+				    <div class="col size16">{{a.receiver}}</div>
+				    <div class="col size16">{{a.mobilePhone}}</div>
+				    <div class="col"></div>
+				</div>
+				<div class="row detail-address"><div class="col size13">{{a.addressStr}}</div></div>
+				<div class="row">
+					<div class="col">
+						<div class="row">
+							<div class="col size13 pb0">
+								<label ng-click="selected({{a}})">
+									<img ng-if="a.isDefault==0" src="img/checked.png"/>
+									<img ng-if="a.isDefault!=0" src="img/unchecked.png"/>设为默认地址
+								</label>
+							</div>
+						</div>
+					</div>
+					<div class="col">
+						<div class="row">
+							<div class="col size13 pb0" ng-click="edit(a)"><img src="img/edit.png"/>编辑</div>
+							<div class="col size13 pb0" ng-click="deleteConfirm(a)"><img src="img/delete.png"/>删除</div>
+						</div>
+					</div>
+				</div>
+			  </div>
+		</div>
+
+		<a ng-if="addressList.length < 10" class="add-address" ui-sref="addandEditAddress({id:''})">添加收货地址</a>
+	
+		<!-- 删除确认 -->
+        <script id="confirm.html" type="text/ng-template">
+        	<div class="cqt-modal-mask"></div>
+            <div class="cqt-modal confirm-bind-modal pb-10">
+                <div>
+                	<p class="p-type11">确定要删除该地址吗？</p>
+                </div>
+                <div class="row">
+                	<div class="col"><button type="button" class="btn" ng-click="delete()">确定</button></div>
+                	<div class="col"><button type="button" class="btn" ng-click="confirmModal.hide()">取消</button></div>
+                </div>
+            </div>
+        </script>
+
+	</ion-content>
+
+</ion-view>
+
+
+
+

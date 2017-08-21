@@ -1,0 +1,101 @@
+﻿<ion-view class="mlpwd user-info authen-step2" hide-app-title>
+
+	<ion-header-bar class="bar bar-header">
+        <a class="back-btn ion-ios-arrow-left" ng-click="back()"></a>
+        <h1 class="title">完善资料</h1>
+    </ion-header-bar>
+
+	<ion-content>
+	
+		<div class="content">
+				<div class="top-img">
+					<img src="./img/IDauthenStep2-01.png"/>
+				</div>
+				<div class="row tips">可以直接输入经销商推荐码或选择经销商</div>
+				<div class="row input-pwd">
+					<div class="col">
+						<input type="text" placeholder="输入经销商推荐码" ng-model="params3.code" ng-blur = "searchFuzzy()"/>
+					</div>
+				</div>
+				<div class="row tips">选择经销商</div>
+				<div class="list">
+					  <div class="item item-input item-select">
+					    <div class="input-label">
+					      省份
+					    </div>
+					    <select ng-model="params.provinceId" ng-options="p.provinceID as p.province for p in proviceList" ng-change="getCity(true)">
+					    	<option selected="" value="">请选择</option>
+					    </select>
+					  </div>
+
+					  <div class="item item-input item-select">
+					    <div class="input-label">
+					      城市
+					    </div>
+					    <select ng-model="params.cityId" ng-options="c.cityID as c.city for c in cityList" ng-change="getArea(true)">
+					      <option selected="" value="">请选择</option>
+					    </select>
+					  </div>
+
+					  <div class="item item-input item-select">
+					    <div class="input-label">
+					      区县
+					    </div>
+					    <select ng-model="params.areaId" ng-options="c.areaID as c.area for c in areaList" ng-change="getFuzzy(true)">
+					      <option selected="" value="">请选择</option>
+					    </select>
+					  </div>
+
+					  <div class="item item-input item-select">
+					    <div class="input-label">
+					      经销商地址
+					    </div>
+					    <select ng-model="params2.memberNo" ng-options="f.memberNo as f.address for f in fuzzyList" ng-change="getFuzzyName(true)">
+					      <option selected="" value="">请选择</option>
+					    </select>
+					  </div>
+				</div>
+
+				<div class="row input-pwd fuzzyName" ng-if="fuzzyName">
+					<div class="col">
+						经销商名称：{{fuzzyName}}
+					</div>
+				</div>
+				<div class="tip">
+					<i></i>绑定即可享受门店专属服务。
+				</div>
+				
+				<div class="submit-area">
+					<input type="button" value="提交" ng-click="submitConfirm()"/>
+				</div>
+		</div>
+
+		<!-- 绑定确认 -->
+        <script id="confirm.html" type="text/ng-template">
+        	<div class="cqt-modal-mask"></div>
+	        <div class="cqt-modal confirm-bind-modal">
+	        	<div class="content-modal">
+	                <div>
+	                	<p class="title">请确认您的经销商信息</p>
+	                	<p class="p1">经销商名称：{{fuzzyName}}</p>
+	                	<p class="p1">经销商地址：{{addressPre.provinceName}}{{addressPre.cityName}}{{addressPre.areaName}}{{address}}</p>
+	                	<p class="p2">绑定经销商，将为您提供专属的提货与发货服务！</p>
+	                </div>
+	            </div>
+	            <div class="row buttons-g1">
+	            	<div class="col"><button type="button" class="btn" ng-click="confirmModal.hide()">取消</button></div>
+	            	<div class="col"><button type="button" class="btn" ng-click="submit()">确定</button></div>
+	            </div>
+	        </div>
+        </script>
+	
+		
+
+
+	</ion-content>
+
+</ion-view>
+
+
+
+

@@ -1,0 +1,116 @@
+@charset "UTF-8";
+.mlpwd{
+	background-color: #f2f2f2;
+}
+.mlpwd .content{
+	padding: 10px 0;
+}
+.mlpwd .content .row{
+	margin-top: 0;
+	padding: 0;
+}
+.mlpwd .content .row > div{
+	padding: 5px 10px;
+}
+.mlpwd .content .row > div label{
+	float: left;
+	height: 34px;
+	line-height: 34px; 
+}
+.mlpwd .input-vercode{
+	background-color: #fff;
+	margin:0 0 10px 0;
+}
+.mlpwd .input-vercode.padding0{
+	padding: 0;
+}
+.mlpwd .input-vercode.padding0 > div{
+	padding: 5px 10px;
+}
+.mlpwd .input-vercode .input input{
+	width: 60%;
+	display: inline-block;
+	float: right;
+	padding: 0;
+	height: 34px;
+	line-height: 34px;
+}
+.mlpwd .input-vercode .img-vercode,
+.mlpwd .input-vercode .msg-vercode{
+	text-align: center;
+	border-left: solid 1px #dcdcdc;
+}
+.mlpwd .input-vercode .img-vercode .show-img{
+	width: 80px;
+	margin: 0 auto;
+	height: 34px;
+	/*border: solid 1px #222222;*/
+	background-repeat:no-repeat;
+	background-position:center center;
+}
+.mlpwd .input-vercode .msg-vercode button{
+	height: 34px;
+	line-height: 34px;
+	background-color: #fff;
+	color: #db4b29;
+}
+.mlpwd .input-vercode .msg-vercode button[disabled]{
+	color: #999999;
+}
+.mlpwd .input-pwd{
+	margin-bottom: 10px;
+	padding: 5px;
+    background-color: #fff;
+}
+.mlpwd .input-pwd input[type="text"],
+.mlpwd .input-pwd input[type="password"]{
+	/* width: 100%;
+	padding: 0; */
+
+	margin-right: 3%;
+	width: 70%;
+	float: right;
+	padding: 0;
+	height: 34px;
+	line-height: 34px;
+}
+.mlpwd .input-pwd input.right-input{
+	margin-right: 3%;
+	width: 70%;
+	float: right;
+	padding: 0;
+	height: 34px;
+	line-height: 34px;
+}
+.mlpwd .input-pwd .col{
+	padding: 0;
+}
+.mlpwd .submit-area{
+	margin: 50px 0 0 0;
+	padding: 0 15px;
+}
+.mlpwd .submit-area input{
+	padding: 9px 0;
+	border: 0;
+	width: 100%;
+	background-color: #db4b29;
+	color: #fff;
+	border-radius: 4px;
+	font-size: 18px;
+}
+.mlpwd .content .row.send-tips{
+    padding: 0 5px 10px 5px;
+}
+.send-tips{
+	padding: 0 10px 10px;
+	color: #666666;
+}
+.send-tips i{
+	float: left;
+	margin: 3px 3px 0 0;
+	display: inline-block;
+	width: 15px;
+	height: 15px;
+	background: url(../../../../img/icon/tip.png) no-repeat center center;
+	background-size: contain;
+}

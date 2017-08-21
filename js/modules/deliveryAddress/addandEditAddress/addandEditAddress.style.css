@@ -1,0 +1,55 @@
+/*
+* @Author: vip
+* @Date:   2017-06-01 13:22:55
+* @Last Modified by:   vip
+* @Last Modified time: 2017-07-27 18:19:16
+*/
+.add-edit-address .set-default label{
+	padding-left: 37px;
+	background-color: transparent;
+	border: 0;
+	font-size: 14px;
+}
+.add-edit-address .set-default .checkbox input:checked+.checkbox-icon:before{
+	background: #db4b29;
+	border-color: #db4b29;
+}
+.add-edit-address .set-default .checkbox input, .checkbox-icon{
+	width: 18px;
+	height: 18px;
+}
+.add-edit-address .set-default .item-checkbox .checkbox{
+	top: 60%;
+}
+.add-edit-address .set-default .checkbox input:after, .checkbox-icon:after{
+	left: 21%;
+	top: 28%;
+	width: 11px;
+	height: 6px;
+}
+.add-edit-address .tip{
+	padding: 0 10px 10px;
+	color: #666666;
+}
+.add-edit-address .tip i{
+	float: left;
+	margin: 3px 3px 0 0;
+	display: inline-block;
+	width: 15px;
+	height: 15px;
+	background: url(../../../../img/icon/tip.png) no-repeat center center;
+	background-size: contain;
+}
+.mlpwd.add-edit-address .submit-area{
+	margin: 50px 0 0;
+}
+.mlpwd.add-edit-address .submit-area input{
+	border-radius: 5px;
+	background-color: #db4b29;
+}
+.add-edit-address .item-select select{
+    padding-left: 0;
+    width: 65%;
+    text-indent: 7px;
+    direction: ltr;
+}
